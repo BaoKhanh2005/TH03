@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời khóa biểu ngang</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana;
+            background-color: whitesmoke;
+            padding: 40px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+        
+        .schedule {
+            display: grid;
+            grid-template-columns: 120px repeat(5, 1fr);
+            border: 1px solid #000000;
+            border-radius: 8px;
+        }
+        
+        .header,
+        .content {
+            border: 1px solid #000000;
+            padding: 12px;
+        }
+        
+        .header {
+            background-color: #22deff;
+            font-weight: bold;
+        }
+        
+        .content .text {
+            margin: 4px 0;
+            padding: 8px;
+            background-color: #33ff00;
+            border-radius: 4px;
+        }
+        
+        .content .text:hover {
+            background-color: #fad8ea;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Thời khóa biểu</h1>
+
+    <div class="schedule">
+        <div class="header"></div>
+        <div class="header">Thứ 2</div>
+        <div class="header">Thứ 3</div>
+        <div class="header">Thứ 4</div>
+        <div class="header">Thứ 5</div>
+        <div class="header">Thứ 6</div>
+
+
+        <div class="header">Buổi sáng</div>
+        <div class="content">
+            <div class="text">SHDC</div>
+            <div class="text">Toán</div>
+            <div class="text">Văn</div>
+        </div>
+        <div class="content">
+            <div class="text">Văn</div>
+            <div class="text">Công Nghệ</div>
+            <div class="text">Lí</div>
+        </div>
+        <div class="content">
+            <div class="text">Hóa</div>
+            <div class="text">Hóa</div>
+            <div class="text">Anh</div>
+        </div>
+        <div class="content">
+            <div class="text">Anh</div>
+            <div class="text">Anh</div>
+            <div class="text">Sử</div>
+        </div>
+        <div class="content">
+            <div class="text">Lí</div>
+            <div class="text">Lí</div>
+            <div class="text">Hóa</div>
+        </div>
+
+
+        <div class="header">Buổi chiều</div>
+        <div class="content">
+            <div class="text">Lí</div>
+            <div class="text">Địa</div>
+        </div>
+        <div class="content">
+            <div class="text">Sinh</div>
+            <div class="text">Anh</div>
+        </div>
+        <div class="content">
+            <div class="text">Thể dục</div>
+            <div class="text">Thể dục</div>
+        </div>
+        <div class="content">
+            <div class="text">Giáo dục</div>
+            <div class="text">Địa</div>
+        </div>
+        <div class="content">
+            <div class="text">Quốc phòng</div>
+            <div class="text">Địa</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
