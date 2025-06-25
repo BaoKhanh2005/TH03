@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng kí thông tin</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            padding: 40px;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background-color: #19fff4;
+            border-radius: 8px;
+            padding: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: black;
+            margin-bottom: 45px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #000000;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #585858;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+        
+        button:hover {
+            background-color: #50a4e8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Đăng kí thông tin</h1>
+        <form>
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="radio-group">
+                <label>Giới tính:</label>
+                <label><input type="radio" name="gender" value="Nam">Nam</label>
+                <label><input type="radio" name="gender" value="Nữ">Nữ</label>
+                <label><input type="radio" name="gender" value="Khác">Khác</label>
+            </div>
+
+
+            <button>Đăng kí</button>
+        </form>
+    </div>
+</body>
+
+</html>
