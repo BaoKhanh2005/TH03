@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách môn học yêu thích</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: aliceblue;
+            padding: 40px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        .subject-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            max-width: 700px;
+            margin: 30px auto 0;
+        }
+        
+        .card {
+            background-color: #fff;
+            border: 1px solid #ffb1d6;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-align: center;
+        }
+        
+        .card:hover {
+            background-color: #ffd8eb;
+            color: white;
+            border-color: #ff89c2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Danh sách môn học yêu thích</h1>
+    <div class="subject-list">
+        <div class="card"> Đồ hoạ</div>
+        <div class="card"> Tiếng anh</div>
+        <div class="card"> Nhập môn lập trình</div>
+        <div class="card"> Kỹ năng làm việc nhóm</div>
+    </div>
+</body>
+
+</html>
